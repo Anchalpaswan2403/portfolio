@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+function reg(){
+    //alert("hii");
+var n=document.getElementById("name").value;
+var fn=document.getElementById("fname").value;
+var inf=document.getElementById("inform").value;
+var zip=document.getElementById("zip").value;
+var place=document.getElementById("place").value;
+var Country=document.getElementById("con").value;
+var code=document.getElementById("code").value;
+var mob=document.getElementById("mob").value;
+var email=document.getElementById("email").value;
+var pass=document.getElementById("pass").value;
+
+
+var pn=/^[a-zA-Z ]{3,10}$/;
+var pf=/^[a-zA-Z ]{3,10}$/;
+var pinf=/^[a-zA-Z ]{3,10}$/;
+var pzip=/^[0-9]{6}$/;
+var pplace=/^[a-zA-Z ]{3,10}$/;
+var pcountry=/^[a-zA-Z ]{3,10}$/;
+var pcode=/^[0-9]{5}$/;
+var pmob=/^[0-9]{10}$/;
+var pemail=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+var ppass=/^[a-zA-Z0-9._-]{6,10}$/;
+
+// name validate range open
+if(pn.test(n)){
+document.getElementById("alert").innerHTML="Valid name";
+document.getElementById("alert").style.color="green";
+}
+else{
+  document.getElementById("alert").innerHTML="Invalid name";
+    document.getElementById("alert").style.color="red";
+}
+// name validation range end
+
+
+// father validation open
+if(pf.test(fn)){
+document.getElementById("alert1").innerHTML="Valid Father name";
+document.getElementById("alert1").style.color="green";
+}
+else{
+  document.getElementById("alert1").innerHTML="Invalid Father name";
+    document.getElementById("alert1").style.color="red";
+}
+// father validation end
+
+// information validation open
+if(pinf.test(inf))
+{
+document.getElementById("alert2").innerHTML="Valid information";
+document.getElementById("alert2").style.color="green";
+}
+else{
+  document.getElementById("alert2").innerHTML="Invalid information";
+document.getElementById("alert2").style.color="red";
+}
+
+// information validation end
+
+// zip code validation open
+if(pzip.test(zip))
+{
+document.getElementById("alert3").innerHTML="Valid Zip";
+document.getElementById("alert3").style.color="green";
+}
+else{
+document.getElementById("alert3").innerHTML="Invalid Zip";
+document.getElementById("alert3").style.color="red";
+}
+
+// zip code validation end
+
+
+// place validation open
+if(pplace.test(place))
+{
+document.getElementById("alert4").innerHTML="Valid place";
+document.getElementById("alert4").style.color="green";
+}
+else{
+  document.getElementById("alert4").innerHTML="Invalid place";
+document.getElementById("alert4").style.color="red";
+}
+
+// place validation end
+
+// country validation open
+if(pcountry.test(Country))
+{
+  document.getElementById("alert5").innerHTML="Valid Country";
+document.getElementById("alert5").style.color="green";
+}
+else{
+  document.getElementById("alert5").innerHTML="Invalid Country";
+document.getElementById("alert5").style.color="red";
+}
+
+// country validation end
+
+
+// code validation open
+
+if(pcode.test(code))
+{
+document.getElementById("alert6").innerHTML="Valid code";
+document.getElementById("alert6").style.color="green";
+}
+else{
+  document.getElementById("alert6").innerHTML="Invalid code";
+document.getElementById("alert6").style.color="red";
+}
+// code validation end
+
+// mobale validation open
+if(pmob.test(mob))
+{
+document.getElementById("alert7").innerHTML="Valid phone";
+document.getElementById("alert7").style.color="green";
+}
+
+else{
+document.getElementById("alert7").innerHTML="Invalid phone";
+document.getElementById("alert7").style.color="red";
+}
+// mobale validation  end
+
+
+// email validation open
+if(pemail.test(email))
+{
+document.getElementById("alert8").innerHTML="Valid email";
+document.getElementById("alert8").style.color="green";
+}
+else
+{
+  document.getElementById("alert8").innerHTML="Invalid email";
+document.getElementById("alert8").style.color="red";
+}
+// email validation end
+
+// password validation open ppass
+if(ppass.test(pass))
+{
+document.getElementById("alert9").innerHTML="Valid password";
+document.getElementById("alert9").style.color="green";
+}
+else
+{
+  document.getElementById("alert9").innerHTML="Invalid password";
+document.getElementById("alert9").style.color="red";
+}
+// password validation end
+
+}
+
+    </script>
+</head>
+<body>
+    <section class="h-100 h-custom gradient-custom-2">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                   <div class="col-lg-3"></div>
+                    <div class="col-lg-6 bg-indigo text-white" style="background-color: #9b98b6;">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5">Contact Details</h3>
+      
+                        <div class="row">
+                            <div class="col-md-6 mb-4 pb-2">
+        
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Examplev2">Enter name</label>
+                                <input type="text" id="name" class="form-control form-control-lg" />
+                                <span id="alert"></span>
+                              </div>
+        
+                            </div>
+                            <div class="col-md-6 mb-4 pb-2">
+        
+                              <div class="form-outline">
+                                <label class="form-label" for="form3Examplev3">Father name</label>
+                                <input type="text" id="fname" class="form-control form-control-lg" />
+                                <span id="alert1"></span>
+                              </div>
+        
+                            </div>
+                          </div>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea3">Additional Information</label>
+                            <input type="text" id="inform" class="form-control form-control-lg" />
+                            <span id="alert2"></span>
+                          </div>
+                        </div>
+      
+                        <div class="row">
+                          <div class="col-md-5 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea4">Zip Code</label>
+                              <input type="text" id="zip" class="form-control form-control-lg" />
+                              <span id="alert3"></span>
+                            </div>
+      
+                          </div>
+                          <div class="col-md-7 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea5">Place</label>
+                              <input type="text" id="place" class="form-control form-control-lg" />
+                              <span id="alert4"></span>
+                            </div>
+      
+                          </div>
+                        </div>
+      
+                        <div class="mb-4 pb-2">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea6">Country</label>
+                            <input type="text" id="con" class="form-control form-control-lg" />
+                            <span id="alert5"></span>
+                          </div>
+                        </div>
+      
+                        <div class="row">
+                          <div class="col-md-5 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea7">Code +</label>
+                              <input type="text" id="code" class="form-control form-control-lg" />
+                              <span id="alert6"></span>
+                            </div>
+      
+                          </div>
+                          <div class="col-md-7 mb-4 pb-2">
+      
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea8">Phone Number</label>
+                              <input type="text" id="mob" class="form-control form-control-lg" />
+                              <span id="alert7"></span>
+                            </div>
+      
+                          </div>
+                        </div>
+      
+                        <div class="mb-4">
+                          <div class="form-outline form-white">
+                            <label class="form-label" for="form3Examplea9">Your Email</label>
+                            <input type="text" id="email" class="form-control form-control-lg" />
+                            <span id="alert8"></span>
+                          </div>
+                        </div>
+      
+                        <div class="mb-4">
+                            <div class="form-outline form-white">
+                              <label class="form-label" for="form3Examplea9">Your Password</label>
+                              <input type="text" id="pass" class="form-control form-control-lg" />
+                              <span id="alert9"></span>
+                            </div>
+                          </div>
+                       <center>
+                        <button type="button" class="btn btn-light btn-lg"
+                        data-mdb-ripple-color="dark" onclick="reg()">Register</button>
+                       </center> 
+                      </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
