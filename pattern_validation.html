@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function valid()
+{
+var pname=/^[a-zA-Z ]{3,12}$/;
+var name=document.getElementById("td").value;
+if(!pname.test(name))
+{
+//alert("Invalid");
+document.getElementById("sp").innerHTML="Invalid";
+}
+else
+{
+//alert("valid");
+document.getElementById("sp").innerHTML="Valid";
+
+}
+
+
+}
+</script>
+</head>
+<body>
+Name:
+<input type="text" id="td"/>
+<br/>
+<span id="sp"></span>
+<br/>
+
+<input type="button" value="validation" onclick="valid()"/>
+</body>
+</html>
