@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: lightgray;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    #Registeration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #register-box {
+      margin-top: 120px;
+      max-width: 600px;
+      width: 100%;
+      border: 1px solid #9C9C9C;
+      background-color: #EAEAEA;
+      border-radius: 15px;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-info {
+      width: 100%;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="Registeration">
+    <div class="container">
+      <div id="register-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="register-box" class="col-md-12">
+            <form action="" method="">
+
+              <h3 class="text-center text-info">Register Form</h3>
+
+              <div class="form-group">
+                <label for="name" class="text-info">Name:</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="mobile" class="text-info">Mobile:</label>
+                <input type="number" name="mobile" id="mobile" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="text-info">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="amount" class="text-info">Amount:</label>
+                <input type="number" name="amount" id="amount" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="remember-me" class="text-info">
+                  <span>Remember me</span> 
+                  <input id="remember-me" name="remember-me" type="checkbox">
+                </label><br>
+                <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
